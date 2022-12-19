@@ -2,7 +2,7 @@ import { REMOVE_PRODUCT } from "../../actionTypes/actionTypes";
 
 const deleteProduct = (id) => {
     return async (dispatch, getState) => {
-        const res = await fetch(`http://localhost:5000/product/${id}`, {
+        const res = await fetch(`https://techno-hub-server.vercel.app/product/${id}`, {
             method: 'DELETE',
             headers: {
                 'content-type': 'application/json',
